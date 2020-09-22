@@ -24,18 +24,6 @@ UDP Pinger with RTT and Packet Loss
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 # UDP-Server - Opgave Beskrivelse 
 I dag skal vi lave en UDP-server, der også skal bruges til jeres første aflevering i DIS. Bare rolig, hvis I ikke formår at lave den, vil jer lægge en færdig server op i slutningen af timen. 
 
