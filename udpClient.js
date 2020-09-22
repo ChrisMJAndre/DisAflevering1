@@ -1,5 +1,5 @@
 
-// General thought can be seen in the ReadMe file
+// General thoughts can be seen in the ReadMe file
 
 // Defining variables, module and socket
 const host = "192.168.0.179";
