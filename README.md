@@ -2,7 +2,23 @@ Github Repository - Godkendelsesopgave 1
 UDP Pinger with RTT and Packet Loss 
 
 
- 
+ # udpClient.js 
+ There are a few things to consider with this project 
+
+ 1. Client send speed (For loop send speed)
+
+ The Client actually sends all 10 of the messages before receiving a single message from the Server.
+
+ Therefore the RTT for the pings are linearly growing in RTT
+
+ Optimal solution here would be for the Client to send one message and not send another before the Client got a respons back from the Server
+
+ 2. packageControl()
+
+ The function has a setTimer(), which ensures that the function does not just count the received messages instantly, 
+ since the Client and Server needs time to send and receive the pings.
+
+ The timer is set to 100 ms to ensure that the function does not prematurely count the pings 
 
 
 
