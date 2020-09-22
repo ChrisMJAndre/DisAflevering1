@@ -12,4 +12,4 @@ server.on("message",(msg,rinfo)=>{
     server.send(Buffer.from("besked"),rinfo.port, rinfo.address);
 });
 
-server.bind(8080,"192.168.0.179" )
+server.bind(8080,"0.0.0.0" )

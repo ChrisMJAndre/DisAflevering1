@@ -2,7 +2,7 @@
 // General thoughts can be seen in the ReadMe file
 
 // Defining variables, module and socket
-const host = "192.168.0.179";
+const host = "0.0.0.0";
 const port = 8080;
 var start; 
 const dgram = require('dgram');
@@ -31,7 +31,7 @@ client.on("message", (msg,rinfo) => {
     pings++;
     // Calculates the Round Trip Time for the Client to send to the Server and the Server to send a message back
     var elapsed = end.getTime() - start.getTime();
-    console.log("Message Recived, Elapsed time for ping " + pings + ": " + elapsed + " ms");
+    console.log("Message Recived, Elapsed Round Trip Time for ping " + pings + ": " + elapsed + " ms");
 })
 // Function that checks if the Client recived all of the pings from the Server
 const packageControl = () =>{
